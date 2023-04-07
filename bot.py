@@ -6,6 +6,6 @@ from pprint import pprint
 
 import ccxt
 
-exchange = ccxt.binance({}) 
+exchange = ccxt.coinbasepro
 price = exchange.fetchTicker('BTC/USDT')['last']
 print(price)
