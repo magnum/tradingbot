@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/magnum/tradingbot#readme",
   "dependencies": {
-    "ccxt": "^3.0.56"
+    "ccxt": "^3.0.56",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3"
   }
 }
