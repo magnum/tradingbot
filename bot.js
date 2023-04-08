@@ -9,7 +9,7 @@ class Bot {
   }
 
   async price_in_usd(currency) {
-    const ticker = await this.exchange.fetchTicker(currency + '/USD');
+    const ticker = await this.exchange.fetchTicker(currency.toUpperCase() + '/USD');
     return ticker.last;
   }
 
@@ -21,9 +21,9 @@ class Bot {
 
   async run() {
     const amount = 100;
-    const currency = 'ETH'
+    const currency = 'eth'
     const value = await this.value_in_usd(amount, currency);
-    console.log(`${amount} $ is worth ${value.toFixed(2)} ${currency} at ${dayjs()}`);
+    console.log(`${amount} $ is worth ${value.toFixed(8)} ${currency} at ${dayjs()}`);
   }
 }
 
