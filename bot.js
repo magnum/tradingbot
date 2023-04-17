@@ -23,7 +23,7 @@ class Bot {
     const amount = 100;
     const currency = 'eth'
     const value = await this.value_in_usd(amount, currency);
-    console.log(`${amount} $ is worth ${value.toFixed(8)} ${currency} at ${dayjs()}`);
+    console.log(`${amount} $ is worth ${value.toFixed(8)} ${currency.toUpperCase()} at ${dayjs()}`);
   }
 }
 
